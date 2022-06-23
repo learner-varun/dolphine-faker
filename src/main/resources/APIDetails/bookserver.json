@@ -1,0 +1,58 @@
+[
+  {
+    "URL": "/books/1159142",
+    "HTTPMethod": "GET",
+    "ResponseCode": 200,
+    "LoadFromFile": true,
+    "ResponseFile": "src/main/resources/responseFiles/Book-1159142.json",
+    "Response": ""
+  },
+  {
+    "URL": "/books/1001",
+    "HTTPMethod": "POST",
+    "ResponseCode": 200,
+    "LoadFromFile": false,
+    "ResponseFile": "",
+    "Response": "{ \"status\":\"success\", \"message\": \"Book created successfully\" }"
+  },
+  {
+    "URL": "/books/1001",
+    "HTTPMethod": "PUT",
+    "ResponseCode": 200,
+    "LoadFromFile": false,
+    "ResponseFile": "",
+    "Response": "{ \"status\":\"success\", \"message\": \"Book details updated successfully\" }"
+  },
+  {
+    "URL": "/books/1001",
+    "HTTPMethod": "PATCH",
+    "ResponseCode": 200,
+    "LoadFromFile": false,
+    "ResponseFile": "",
+    "Response": "{ \"status\":\"success\", \"message\": \"Book details updated successfully\" }"
+  },
+  {
+    "URL": "/books/1001",
+    "HTTPMethod": "DELETE",
+    "ResponseCode": 200,
+    "LoadFromFile": false,
+    "ResponseFile": "",
+    "Response": "{ \"status\":\"success\", \"message\": \"Book deleted successfully\" }"
+  },
+  {
+    "URL": "/books",
+    "HTTPMethod": "GET",
+    "ResponseCode": 200,
+    "LoadFromFile": true,
+    "ResponseFile": "src/main/resources/responseFiles/AllBookList.json",
+    "Response": ""
+  },
+  {
+    "URL": "/html/login",
+    "HTTPMethod": "GET",
+    "ResponseCode": 200,
+    "LoadFromFile": true,
+    "ResponseFile": "src/main/resources/responseFiles/loginPage.html",
+    "Response": ""
+  }
+]
