@@ -29,7 +29,7 @@
 You can add as many APIs you need and If you need to read response from a file Pass the file URL in `'ResponseFile'` and mark `'LoadFromFile'=true` 
 
 - Run the below command after navigating to root folder 
-> mvn clean compile exec:java -Dexec.mainClass="Server" -Dexec.args="API_DETAILS_JSON_FILE_NAME"
+> mvn clean install -DJsonFile="API_DETAILS_JSON_FILE_NAME"
 
 - Now APIs are available in http://localhost:9909
 
