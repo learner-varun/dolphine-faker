@@ -11,7 +11,31 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <JsonFile>bookserver.json</JsonFile>
     </properties>
+    <build>
+    <plugins>
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+            <execution>
+                <phase>install</phase>
+                <goals>
+                    <goal>java</goal>
+                </goals>
+                <configuration>
+                    <mainClass>Server</mainClass>
+                    <arguments>
+                        <argument>${JsonFile}</argument>
+                    </arguments>
+                </configuration>
+            </execution>
+        </executions>
+    </plugin>
+    </plugins>
+    </build>
     <dependencies>
             <!-- https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock -->
             <dependency>
